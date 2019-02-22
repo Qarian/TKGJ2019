@@ -609,8 +609,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startScale: 5
-  smallerScale: 0
-  increaseSize: 0
+  smallerScale: 1
+  increaseSize: 1
 --- !u!4 &1903935498
 Transform:
   m_ObjectHideFlags: 0
