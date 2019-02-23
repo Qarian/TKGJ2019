@@ -10,6 +10,10 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveVelocity;
     private Rigidbody2D rb;
 
+    public int neededMoney = 10;
+
+    public int resources = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,9 +33,11 @@ public class PlayerMovement : MonoBehaviour
         {
           //  transform.localScale = new Vector3(2, 2, 2);
           //  Invoke("DecreaseSize", 1);
-            if(zone != null)
+            if(zone != null && transform.GetComponent<PlayerShop>().money < neededMoney )
             {
                 zone.IncreaseScale();
+
+
             }
         }
 

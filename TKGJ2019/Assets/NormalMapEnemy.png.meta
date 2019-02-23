@@ -1,29 +1,29 @@
 fileFormatVersion: 2
-guid: ef086e1ede29791409c78bcb1a5594a6
+guid: 01c5e15a39b77714faf72aa0668f396e
 TextureImporter:
   fileIDToRecycleName:
-    21300000: "Robot-G\u0105sienice_0"
-    21300002: "Robot-G\u0105sienice_1"
-    21300004: "Robot-G\u0105sienice_2"
-    21300006: "Robot-G\u0105sienice_3"
-    21300008: "Robot-G\u0105sienice_4"
-    21300010: "Robot-G\u0105sienice_5"
-    21300012: "Robot-G\u0105sienice_6"
-    21300014: "Robot-G\u0105sienice_7"
-    21300016: "Robot-G\u0105sienice_8"
-    21300018: "Robot-G\u0105sienice_9"
-    21300020: "Robot-G\u0105sienice_10"
-    21300022: "Robot-G\u0105sienice_11"
-    21300024: "Robot-G\u0105sienice_12"
-    21300026: "Robot-G\u0105sienice_13"
-    21300028: "Robot-G\u0105sienice_14"
-    21300030: "Robot-G\u0105sienice_15"
+    21300000: NormalMapEnemy_0
+    21300002: NormalMapEnemy_1
+    21300004: NormalMapEnemy_2
+    21300006: NormalMapEnemy_3
+    21300008: NormalMapEnemy_4
+    21300010: NormalMapEnemy_5
+    21300012: NormalMapEnemy_6
+    21300014: NormalMapEnemy_7
+    21300016: NormalMapEnemy_8
+    21300018: NormalMapEnemy_9
+    21300020: NormalMapEnemy_10
+    21300022: NormalMapEnemy_11
+    21300024: NormalMapEnemy_12
+    21300026: NormalMapEnemy_13
+    21300028: NormalMapEnemy_14
+    21300030: NormalMapEnemy_15
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
-    sRGBTexture: 1
+    enableMipMap: 1
+    sRGBTexture: 0
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -58,16 +58,16 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 1
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Robot-G\u0105sienice_0"
+      name: NormalMapEnemy_0
       rect:
         serializedVersion: 2
         x: 0
@@ -114,13 +114,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5b1ede34adb9804dac974eeeafaded7
+      spriteID: 3e27ba2d5c40726489cf764fb462a527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Robot-G\u0105sienice_1"
+      name: NormalMapEnemy_1
       rect:
         serializedVersion: 2
         x: 160
@@ -134,13 +134,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13baed8b3815e844283c6f9668dc9dfa
+      spriteID: c1df52eef8d47aa4a83c3a3b22a0d563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Robot-G\u0105sienice_2"
+      name: NormalMapEnemy_2
       rect:
         serializedVersion: 2
         x: 320
@@ -154,13 +154,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b829021294ebe64aa7ca2ca97864c90
+      spriteID: d63ce3f21ffed1e4fbe1a58639c68114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Robot-G\u0105sienice_3"
+      name: NormalMapEnemy_3
       rect:
         serializedVersion: 2
         x: 480
@@ -174,13 +174,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9730bce96065ef346a9e1b74aec568ab
+      spriteID: 2fe38b0d6250c654d9860ee31ed154a4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Robot-G\u0105sienice_4"
+      name: NormalMapEnemy_4
       rect:
         serializedVersion: 2
         x: 0
@@ -194,13 +194,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93774f9e0620e0843910ddcb156d0f1f
+      spriteID: e5003cf875741034da21fb62f21aa6e1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Robot-G\u0105sienice_5"
+      name: NormalMapEnemy_5
       rect:
         serializedVersion: 2
         x: 160
@@ -214,13 +214,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 774a1360df619074e9886574fae55b94
+      spriteID: d5263f71316fd9c418dd3405affe82fc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Robot-G\u0105sienice_6"
+      name: NormalMapEnemy_6
       rect:
         serializedVersion: 2
         x: 320
@@ -234,13 +234,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1319baad96532f948b6b4bafdf62a001
+      spriteID: efae15a5acc07d14f978f31b90f01255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Robot-G\u0105sienice_7"
+      name: NormalMapEnemy_7
       rect:
         serializedVersion: 2
         x: 480
@@ -254,13 +254,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02c064a3603863249bd66337993ed7bc
+      spriteID: 984f4f4578054214cbead0eee8995428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Robot-G\u0105sienice_8"
+      name: NormalMapEnemy_8
       rect:
         serializedVersion: 2
         x: 0
@@ -274,13 +274,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a460856d3fcc5f04d8dd3b3022133ab1
+      spriteID: b695a82b2c352d94ab9982dd5a860c62
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Robot-G\u0105sienice_9"
+      name: NormalMapEnemy_9
       rect:
         serializedVersion: 2
         x: 160
@@ -294,13 +294,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c30986e679ae8144887bae9cd6803e73
+      spriteID: 7dca5da56fd211d44b57ca7d2e8421bc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Robot-G\u0105sienice_10"
+      name: NormalMapEnemy_10
       rect:
         serializedVersion: 2
         x: 320
@@ -314,13 +314,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6dc09c9ba6121a469edf060c84d6a70
+      spriteID: 26d7a6535c59b884bbc7cc9d498c41d1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Robot-G\u0105sienice_11"
+      name: NormalMapEnemy_11
       rect:
         serializedVersion: 2
         x: 480
@@ -334,13 +334,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41094ff3bc032724aa9dbc37359505d8
+      spriteID: 9b2a5a1fd0c05b949b5237e3602b0454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Robot-G\u0105sienice_12"
+      name: NormalMapEnemy_12
       rect:
         serializedVersion: 2
         x: 0
@@ -354,13 +354,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72958010bf258ca4a9fbc5bb64f508bb
+      spriteID: 22581aca4fb04824c8c1add20162aca7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Robot-G\u0105sienice_13"
+      name: NormalMapEnemy_13
       rect:
         serializedVersion: 2
         x: 160
@@ -374,13 +374,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 536d319bf41c23c4c94503df282300fe
+      spriteID: bf273a347efd72340a2e172ef3321bd3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Robot-G\u0105sienice_14"
+      name: NormalMapEnemy_14
       rect:
         serializedVersion: 2
         x: 320
@@ -394,13 +394,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eea8ae4b6b2ef8e4baeb4772e73b7d76
+      spriteID: 928e48bd4924adb4da1c3326df4e31db
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Robot-G\u0105sienice_15"
+      name: NormalMapEnemy_15
       rect:
         serializedVersion: 2
         x: 480
@@ -414,7 +414,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc0c638851ac0cf4a8096748d7dcc286
+      spriteID: 1919198f6d1c6d148b3d28373c0a7653
       vertices: []
       indices: 
       edges: []
@@ -422,7 +422,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c858df323efb8654680ab2884be1b99c
+    spriteID: 83c420e1ebf11354ebb5f8b6069b2903
     vertices: []
     indices: 
     edges: []
