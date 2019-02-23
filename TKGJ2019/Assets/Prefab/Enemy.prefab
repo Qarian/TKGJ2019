@@ -134,7 +134,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 33f8fd7b9faea844a835e522bcc5161d, type: 2}
+  - {fileID: 2100000, guid: c85ce69a5e081804387316eafb223d72, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -196,6 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44ee99481cdcf0479ef9203a2dcb348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resorces: {fileID: 556038314467429200, guid: e71ebe3839bea064f8c49c3acc3bbec9, type: 3}
   EnemyHP: 10
   spawner: {fileID: 0}
 --- !u!61 &4448248447322006672
