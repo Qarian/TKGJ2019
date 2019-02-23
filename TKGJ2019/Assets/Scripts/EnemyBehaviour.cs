@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
+    public GameObject particle;
+
     public GameObject resorces;
 
     public int EnemyHP = 10;
@@ -15,7 +17,9 @@ public class EnemyBehaviour : MonoBehaviour
 
         if (EnemyHP <= 0)
             EnemyDestroy();
-        
+
+
+        particle = Instantiate(particle, transform.position, Quaternion.identity, transform);
     }
 
     void EnemyDestroy()
