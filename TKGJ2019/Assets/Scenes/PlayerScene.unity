@@ -180,7 +180,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -100
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -1701,6 +1701,7 @@ GameObject:
   - component: {fileID: 1850860213}
   - component: {fileID: 1850860212}
   - component: {fileID: 1850860216}
+  - component: {fileID: 1850860218}
   - component: {fileID: 1850860217}
   m_Layer: 0
   m_Name: Player
@@ -1837,6 +1838,19 @@ MonoBehaviour:
   bulletSpeed: 1
   bulletCooldown: 0.5
   bulletDestroy: 1
+--- !u!114 &1850860218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850860211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8c41794f1676143a5204bcc4668142, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHP: 4
 --- !u!1 &2089419784
 GameObject:
   m_ObjectHideFlags: 0

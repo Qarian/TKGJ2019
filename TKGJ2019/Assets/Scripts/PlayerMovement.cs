@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static Transform playerPos;
     Zone zone;
     public float Speed;
     private Vector2 moveVelocity;
@@ -13,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerPos = transform;
     }
 
     // Update is called once per frame
@@ -20,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
+        
         moveVelocity = moveInput.normalized * Speed;
 
         if (Input.GetKeyDown(KeyCode.Space))
