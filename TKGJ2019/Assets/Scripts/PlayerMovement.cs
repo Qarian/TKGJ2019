@@ -12,13 +12,17 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveVelocity;
     private Rigidbody2D rb;
 
-    public int neededMoney = 10;
+	float horizontal;
+	float vertical;
+	Animator animator;
 
+    public int neededMoney = 10;
     public int resources = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+		animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         playerPos = transform;
 
@@ -31,9 +35,14 @@ public class PlayerMovement : MonoBehaviour
     {
         moneyUI.text = transform.GetComponent<PlayerShop>().money.ToString();
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+		moveInput = moveInput.normalized;
 
+		horizontal = moveInput.x;
+		vertical = moveInput.y;
+		animator.SetFloat("Horizontal", horizontal);
+		animator.SetFloat("Vertical", vertical);
         
-        moveVelocity = moveInput.normalized * Speed;
+        moveVelocity = moveInput * Speed;
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -49,9 +58,6 @@ public class PlayerMovement : MonoBehaviour
                 moneyUI.text = transform.GetComponent<PlayerShop>().money.ToString();
 
                 zone.IncreaseScale();
-
-
-              
             }
         }
 

@@ -14,7 +14,14 @@ public class PlayerShooting : MonoBehaviour
     
     private float bulletTime;
 
-    private void Update()
+	Animator animator;
+
+	private void Start()
+	{
+		animator = GetComponent<Animator>();
+	}
+
+	private void Update()
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
@@ -45,7 +52,7 @@ public class PlayerShooting : MonoBehaviour
         if (direction != 0 && bulletTime <= Time.time)
         {
             Shooting(direction);
-
+			animator.SetTrigger("Fire");
         }
     }
     void Shooting(int direction)
