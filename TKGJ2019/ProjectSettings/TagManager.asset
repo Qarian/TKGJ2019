@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Flower
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -15,10 +16,10 @@ TagManager:
   - 
   - 
   - Minimap
-  - 
-  - 
-  - 
-  - 
+  - PlayerZone
+  - Player
+  - Enemy
+  - EnemyZone
   - 
   - 
   - 

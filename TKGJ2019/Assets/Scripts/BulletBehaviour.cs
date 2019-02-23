@@ -10,7 +10,6 @@ public class BulletBehaviour : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<PlayerMovement>() != null) return;
 
-        Debug.Log("BULLET TRIGERRED");
         var col = collision.gameObject.GetComponent<EnemyBehaviour>();
         
         if (col != null)
@@ -19,9 +18,5 @@ public class BulletBehaviour : MonoBehaviour
         }
         
         Destroy(gameObject);
-               
-        
     }
-
-
 }

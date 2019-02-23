@@ -10,7 +10,7 @@ public class EnemyBullet : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<EnemyBehaviour>() != null) return;
 
-        Debug.Log("BULLET TRIGERRED");
+        Debug.Log(collision.gameObject.name);
         var col = collision.gameObject.GetComponent<PlayerHP>();
         
         if (col != null)

@@ -22,8 +22,6 @@ public class SpawnEnemy : MonoBehaviour
 
     void CreateEnemy()
     {
-        Debug.Log(currentEnemiesSpawned + " " + spawnLimit);
-
         if ( currentEnemiesSpawned <= spawnLimit)
         {
             GameObject enem = Instantiate(enemy, transform.position, Quaternion.identity, transform);
