@@ -10,10 +10,10 @@ public class EnemyBehaviour : MonoBehaviour
     public void DealDamage(int damage)
     {
         EnemyHP -= damage;
+		GetComponent<EnemyMovement>().AttackPlayer();
 
         if (EnemyHP <= 0)
             EnemyDestroy();
-        
     }
 
     void EnemyDestroy()

@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnEnemy : MonoBehaviour
@@ -11,13 +10,14 @@ public class SpawnEnemy : MonoBehaviour
     private float spawnTime = 0;
     public int currentEnemiesSpawned = 0;
 
+	public List<Transform> path;
+
     private void Update()
     {
         if (spawnTime <= Time.time)
         {
             CreateEnemy();
         }
-            
     }
 
     void CreateEnemy()
@@ -27,11 +27,12 @@ public class SpawnEnemy : MonoBehaviour
             GameObject enem = Instantiate(enemy, transform.position, Quaternion.identity, transform);
 
             enem.GetComponent<EnemyBehaviour>().spawner = this;
+			EnemyMovement enemyMovement = enem.GetComponent<EnemyMovement>();
+			enemyMovement.path = path;
+			enemyMovement.target = path[0];
             currentEnemiesSpawned++;
-            
 
             spawnTime = Time.time + spawnDelay;
-
         }
     }
 
