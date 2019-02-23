@@ -196,6 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44ee99481cdcf0479ef9203a2dcb348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resorces: {fileID: 556038314467429200, guid: e71ebe3839bea064f8c49c3acc3bbec9, type: 3}
   EnemyHP: 10
   spawner: {fileID: 0}
 --- !u!61 &4448248447322006672
@@ -237,7 +238,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1000000
-  m_LinearDrag: 0
+  m_LinearDrag: 0.01
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -258,10 +259,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
-  seeDistance: 1
+  seeDistance: 3
+  shootingDistance: 4
   distanceToNextpointInPath: 0.03
-  firing: 0
   path: []
+  target: {fileID: 0}
 --- !u!114 &4990113412496152630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,5 +278,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 4124730970716702761, guid: 1064ef12ddc67864991644f09cb22dcc, type: 3}
   bulletSpeed: 5
-  bulletCooldown: 1
+  bulletCooldown: 0.5
   bulletDestroy: 4

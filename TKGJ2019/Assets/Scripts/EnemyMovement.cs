@@ -3,12 +3,13 @@ using System.Collections.Generic;
 
 public class EnemyMovement : MonoBehaviour
 {
-	public float speed = 5;
-	public float seeDistance = 10;
+	public float speed = 5f;
+	public float seeDistance = 10f;
+	public float shootingDistance = 10f;
 	public float distanceToNextpointInPath = 0.03f;
 	float horizontal;
 	float vertical;
-	public bool firing = false;
+	bool firing = false;
 
 	[HideInInspector]
 	public List<Transform> path;
@@ -36,10 +37,10 @@ public class EnemyMovement : MonoBehaviour
 		if (!seenPlayer)
 		{
 			//Try to see player
-			RaycastHit2D raycastHit = Physics2D.Raycast(transform.position, PlayerMovement.playerPos.position - transform.position, seeDistance);
+			RaycastHit2D raycastHit = Physics2D.Raycast(transform.position, PlayerMovement.playerPos.position - transform.position, seeDistance, 1 << 10);
 			if(raycastHit.collider != null && raycastHit.collider.tag == "Player")
 			{
-				AttackPlayer();
+				FocusOnPlayer();
 			}
 			//check if near point
 			else
@@ -53,6 +54,20 @@ public class EnemyMovement : MonoBehaviour
 				}
 			}
 		}
+		else
+		{
+			RaycastHit2D raycastHit = Physics2D.Raycast(transform.position, PlayerMovement.playerPos.position - transform.position, shootingDistance, 1 << 10);
+			if(raycastHit.collider != null && raycastHit.collider.tag == "Player")
+			{
+				firing = true;
+				shooting.enabled = true;
+			}
+			else
+			{
+				firing = false;
+				shooting.enabled = false;
+			}
+		}
 
 		animator.SetFloat("Horizontal", horizontal);
 		animator.SetFloat("Vertical", vertical);
@@ -64,14 +79,16 @@ public class EnemyMovement : MonoBehaviour
 		Vector3 distanceNormalized = (target.position - transform.position).normalized;
 		horizontal = distanceNormalized.x;
 		vertical = distanceNormalized.y;
-		Vector3 distance = distanceNormalized * speed * Time.deltaTime;
-		rb.MovePosition(transform.position + distance);
+		if (!firing)
+		{
+			Vector3 distance = distanceNormalized * speed * Time.deltaTime;
+			rb.MovePosition(transform.position + distance);
+		}
 	}
 
-	public void AttackPlayer()
+	public void FocusOnPlayer()
 	{
 		target = PlayerMovement.playerPos;
 		seenPlayer = true;
-		shooting.enabled = true;
 	}
 }
