@@ -871,6 +871,7 @@ GameObject:
   - component: {fileID: 1850860218}
   - component: {fileID: 1850860217}
   - component: {fileID: 1850860219}
+  - component: {fileID: 1850860220}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -952,12 +953,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300006, guid: e61533907738c234595e2ccd8e165e28, type: 3}
+  m_Sprite: {fileID: 21300018, guid: ef78d8fcc386e404aa314b318fd54d9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 1.6, y: 1.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1009,7 +1010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 4124730970716702761, guid: a6593babb2a0c354c8c61c9b38939956, type: 3}
   bulletSpeed: 4
-  bulletCooldown: 0.1
+  bulletCooldown: 0.2
   bulletDestroy: 4
 --- !u!114 &1850860218
 MonoBehaviour:
@@ -1023,7 +1024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a8c41794f1676143a5204bcc4668142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHP: 4
+  playerHP: 90
 --- !u!114 &1850860219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1037,6 +1038,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   money: 0
+--- !u!95 &1850860220
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850860211}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 044b85396362e1240b48a90b4e611126, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1910132216
 GameObject:
   m_ObjectHideFlags: 0
@@ -1367,7 +1387,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
