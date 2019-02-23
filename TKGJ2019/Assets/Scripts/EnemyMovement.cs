@@ -1,18 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public float horizontal;
+	public float vertical;
+	public bool firing = false;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	Animator animator;
+
+	void Start()
+	{
+		animator = GetComponent<Animator>();
+	}
+
+	void Update()
+	{
+		animator.SetFloat("Horizontal", horizontal);
+		animator.SetFloat("Vertical", vertical);
+		animator.SetBool("Firing", firing);
+	}
 }
