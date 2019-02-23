@@ -22,16 +22,10 @@ public class PlayerMovement : MonoBehaviour
 
         moveVelocity = moveInput.normalized * Speed;
 
-        Debug.Log(zone);
-
         if (Input.GetKeyDown(KeyCode.Space))
         {
-       
           //  transform.localScale = new Vector3(2, 2, 2);
           //  Invoke("DecreaseSize", 1);
-
-            Debug.Log(zone);
-
             if(zone != null)
             {
                 zone.IncreaseScale();
@@ -42,22 +36,20 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        zone = other.gameObject.GetComponent<Zone>();
-        
-
+		if(other.gameObject.tag == "Flower")
+			zone = other.transform.GetComponent<Zone>();
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
+		if(other.transform.tag == "Flower")
         zone = null;
-
     }
 
     private void FixedUpdate()
-        {
-            rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
-
-        }
+    {
+        rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
+    }
 
     private void DecreaseSize()
     {
