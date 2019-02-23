@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{2a61ce6b-4dc3-4138-8747-5a0ecafa60f9}">
+        <property name="assetPath">
+            <value>The Synths - loop.ogg</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>118.15419501133786</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{fed71e25-7100-47d9-9d8d-58719ccfc6f8}</destination>
+        </relationship>
+    </object>
+</objects>
