@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public TextMeshProUGUI moneyUI;
     public static Transform playerPos;
     Zone zone;
     public float Speed;
@@ -19,12 +21,15 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         playerPos = transform;
-      
+
+        moneyUI.text = transform.GetComponent<PlayerShop>().money.ToString();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        moneyUI.text = transform.GetComponent<PlayerShop>().money.ToString();
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
         
@@ -39,10 +44,14 @@ public class PlayerMovement : MonoBehaviour
             {
 
                 transform.GetComponent<PlayerShop>().money -= neededMoney;
+
+                Debug.Log(transform.GetComponent<PlayerShop>().money);
+                moneyUI.text = transform.GetComponent<PlayerShop>().money.ToString();
+
                 zone.IncreaseScale();
 
 
-                Debug.Log(transform.GetComponent<PlayerShop>().money);
+              
             }
         }
 

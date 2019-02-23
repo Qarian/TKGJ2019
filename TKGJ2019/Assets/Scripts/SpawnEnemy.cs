@@ -7,7 +7,7 @@ public class SpawnEnemy : MonoBehaviour
     public GameObject enemy;
 
     public int spawnLimit = 5;
-    public float spawnDelay = 2.0f;
+    public float spawnDelay = 10f;
     private float spawnTime = 0;
     public int currentEnemiesSpawned = 0;
 
@@ -16,13 +16,14 @@ public class SpawnEnemy : MonoBehaviour
         if (spawnTime <= Time.time)
         {
             CreateEnemy();
+            spawnTime = Time.time + spawnDelay;
         }
             
     }
 
     void CreateEnemy()
     {
-        if ( currentEnemiesSpawned <= spawnLimit)
+        if ( currentEnemiesSpawned < spawnLimit)
         {
             GameObject enem = Instantiate(enemy, transform.position, Quaternion.identity, transform);
 
@@ -30,7 +31,7 @@ public class SpawnEnemy : MonoBehaviour
             currentEnemiesSpawned++;
             
 
-            spawnTime = Time.time + spawnDelay;
+           
 
         }
     }
