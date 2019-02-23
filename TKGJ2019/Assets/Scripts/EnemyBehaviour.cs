@@ -1,7 +1,11 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
+    public GameObject particle;
+
     public GameObject resorces;
 
     public int EnemyHP = 10;
@@ -10,10 +14,12 @@ public class EnemyBehaviour : MonoBehaviour
     public void DealDamage(int damage)
     {
         EnemyHP -= damage;
-		GetComponent<EnemyMovement>().FocusOnPlayer();
 
         if (EnemyHP <= 0)
             EnemyDestroy();
+
+
+        particle = Instantiate(particle, transform.position, Quaternion.identity, transform);
     }
 
     void EnemyDestroy()
@@ -22,6 +28,7 @@ public class EnemyBehaviour : MonoBehaviour
 
         Destroy(gameObject);
         spawner.currentEnemiesSpawned--;
+        
     }
 
 }

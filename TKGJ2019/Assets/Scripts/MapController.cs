@@ -25,19 +25,5 @@ public class MapController : MonoBehaviour
 		}
 		Zone.smallerScale = smallerScale;
 		Zone.increaseSize = increaseSize;
-		StartCoroutine(LessenSize());
-	}
-
-	IEnumerator LessenSize()
-	{
-		while (true)
-		{
-			foreach (Zone zone in list)
-			{
-				zone.ReduceScale();
-			}
-			Debug.Log("Decrease size");
-			yield return new WaitForSeconds(smallerTime);
-		}
 	}
 }

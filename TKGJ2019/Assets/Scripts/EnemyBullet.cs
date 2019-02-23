@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class EnemyBullet : MonoBehaviour
 {
@@ -10,12 +12,16 @@ public class EnemyBullet : MonoBehaviour
 
         Debug.Log(collision.gameObject.name);
         var col = collision.gameObject.GetComponent<PlayerHP>();
-        
+        Destroy(gameObject);
         if (col != null)
         {
             col.DealDamageToPlayer(damage);
         }
         
-        Destroy(gameObject);
+       
+               
+        
     }
+
+
 }

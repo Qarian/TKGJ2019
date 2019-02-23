@@ -14,11 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114584862052776224}
+<<<<<<< HEAD
   - {fileID: 114048587902778860}
+=======
+  - {fileID: 114885909584897956}
+>>>>>>> master
   EditorEvents:
   - {fileID: 114284640311424256}
   MasterBanks:
   - {fileID: 114885909584897956}
+<<<<<<< HEAD
   - {fileID: 114048587902778860}
   StringsBanks:
   - {fileID: 114584862052776224}
@@ -44,6 +49,12 @@ MonoBehaviour:
   - Name: Desktop
     Value: 3003712
   Exists: 1
+=======
+  StringsBanks:
+  - {fileID: 114584862052776224}
+  stringsBankWriteTime: 636865527490545583
+  cacheVersion: 3
+>>>>>>> master
 --- !u!114 &114284640311424256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,11 +70,16 @@ MonoBehaviour:
   Path: event:/New Event
   guid: 128c104063f7ac41a39a146c9639a0ea
   Banks:
+<<<<<<< HEAD
   - {fileID: 114048587902778860}
+=======
+  - {fileID: 114885909584897956}
+>>>>>>> master
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
+<<<<<<< HEAD
   - {fileID: 114365328343032866}
   MinDistance: 0
   MaxDistance: 0
@@ -84,6 +100,12 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+=======
+  - {fileID: 114873470253546966}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 118218
+>>>>>>> master
 --- !u!114 &114584862052776224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,7 +119,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\FMOD_Plantbot\Build\Desktop\Master Bank.strings.bank
+<<<<<<< HEAD
   lastModified: 636865527500000000
+=======
+  lastModified: 636865527490545583
+>>>>>>> master
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -138,4 +164,8 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 3003712
+<<<<<<< HEAD
   Exists: 0
+=======
+  Exists: 1
+>>>>>>> master
