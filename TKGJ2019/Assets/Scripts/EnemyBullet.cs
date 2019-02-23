@@ -12,13 +12,13 @@ public class EnemyBullet : MonoBehaviour
 
         Debug.Log(collision.gameObject.name);
         var col = collision.gameObject.GetComponent<PlayerHP>();
-        
+        Destroy(gameObject);
         if (col != null)
         {
             col.DealDamageToPlayer(damage);
         }
         
-        Destroy(gameObject);
+       
                
         
     }

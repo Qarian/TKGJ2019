@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
           //  transform.localScale = new Vector3(2, 2, 2);
           //  Invoke("DecreaseSize", 1);
          
-            if(zone != null && transform.GetComponent<PlayerShop>().money >= neededMoney )
+            if(zone != null && transform.GetComponent<PlayerShop>().money <= neededMoney )
             {
 
                 transform.GetComponent<PlayerShop>().money -= neededMoney;

@@ -15,17 +15,20 @@ public class Zone : MonoBehaviour
 	bool isMaxScale = false;
 
 	Transform childTransform;
+    Transform childTransform2;
 
-	private void Start()
+    private void Start()
 	{
 		childTransform = transform.GetChild(0);
-	}
+        childTransform2 = transform.GetChild(1);
+    }
 
 	private void Update()
 	{
 		scale += (targetScale - scale) * lerpSpeed * Time.deltaTime;
 		childTransform.localScale = new Vector3(scale, scale);
-	}
+        childTransform2.localScale = new Vector3(scale, scale);
+    }
 
 	public void ReduceScale()
 	{
