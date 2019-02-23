@@ -6,14 +6,35 @@ public class SpawnEnemy : MonoBehaviour
 {
     public GameObject enemy;
 
-    public int SpawnLimit = 5;
+    public int spawnLimit = 5;
     public float spawnDelay = 2.0f;
+
+    public int currentEnemiesSpawned = 0;
+
+
+    private void Update()
+    {
+        CreateEnemy();
+    }
+
 
 
     void CreateEnemy()
     {
-        Instantiate(enemy,transform.position, Quaternion.identity);
+        if( currentEnemiesSpawned != spawnLimit)
+        {
+            GameObject enem = Instantiate(enemy, transform.position, Quaternion.identity);
+
+            enem.GetComponent<EnemyBehaviour>().spawner = this;
+            currentEnemiesSpawned++;
+
+        }
         
+
+        
+
     }
+
+
 
 }

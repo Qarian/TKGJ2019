@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyBehaviour : MonoBehaviour
 {
     public int EnemyHP = 10;
+    public SpawnEnemy spawner;
 
     public void DealDamage(int damage)
     {
@@ -18,6 +19,7 @@ public class EnemyBehaviour : MonoBehaviour
     void EnemyDestroy()
     {
         Destroy(gameObject);
+        spawner.currentEnemiesSpawned--;
     }
 
 }

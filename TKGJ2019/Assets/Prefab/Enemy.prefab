@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 8694556694642742826}
   - component: {fileID: 4180663603170945498}
   - component: {fileID: 4448248447322006672}
-  - component: {fileID: 1663245264693146971}
+  - component: {fileID: 651790642}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -107,7 +107,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8694556694642742825}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.85, y: -2.81, z: 0}
   m_LocalScale: {x: 2.0120723, y: 2.0120723, z: 2.0120723}
   m_Children:
@@ -157,7 +157,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -176,7 +176,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 283d068a558e5c045b18f32c0bce6ba0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -195,6 +195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyHP: 10
+  spawner: {fileID: 0}
 --- !u!61 &4448248447322006672
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -213,7 +214,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.6, y: 1.6}
-    newSize: {x: 0.5, y: 0.5}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 1
     adaptiveTiling: 0
@@ -221,7 +222,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!50 &1663245264693146971
+--- !u!50 &651790642
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
