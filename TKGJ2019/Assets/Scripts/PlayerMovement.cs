@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
+using FMODUnity;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -15,6 +14,10 @@ public class PlayerMovement : MonoBehaviour
 	float horizontal;
 	float vertical;
 	Animator animator;
+	StudioEventEmitter emitter;
+
+	float howMuchGreenProgress;
+	bool isInZone;
 
     public int neededMoney = 10;
     public int resources = 0;
@@ -27,12 +30,13 @@ public class PlayerMovement : MonoBehaviour
         playerPos = transform;
 
         moneyUI.text = transform.GetComponent<PlayerShop>().money.ToString();
-
+		emitter = GetComponent<StudioEventEmitter>();
     }
 
     // Update is called once per frame
     void Update()
     {
+		Debug.Log(emitter.IsPlaying());
         moneyUI.text = transform.GetComponent<PlayerShop>().money.ToString();
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 		moveInput = moveInput.normalized;
@@ -60,7 +64,14 @@ public class PlayerMovement : MonoBehaviour
                 zone.IncreaseScale();
             }
         }
-
+		if (isInZone)
+		{
+			isInZone = false;
+			howMuchGreenProgress = Mathf.Clamp01(howMuchGreenProgress + (0.5f * Time.deltaTime));
+		}
+		else
+			howMuchGreenProgress = Mathf.Clamp01(howMuchGreenProgress - (0.5f * Time.deltaTime));
+		emitter.SetParameter("zone", howMuchGreenProgress);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -75,7 +86,13 @@ public class PlayerMovement : MonoBehaviour
         zone = null;
     }
 
-    private void FixedUpdate()
+	private void OnTriggerStay2D(Collider2D collision)
+	{
+		if(collision.tag == "Zone")
+			isInZone = true;
+	}
+
+	private void FixedUpdate()
     {
         rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
     }
