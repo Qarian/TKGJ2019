@@ -260,8 +260,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
-  seeDistance: 10
-  shootingDistance: 10
+  seeDistance: 5
+  shootingDistance: 4
   distanceToNextpointInPath: 0.03
   path: []
   target: {fileID: 0}

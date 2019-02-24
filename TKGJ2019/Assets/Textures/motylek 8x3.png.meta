@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: b32d0c0cc6d5847439a6e4c760a204a0
+guid: 40f8d783e926d324e92e525633ec8e0c
 TextureImporter:
   fileIDToRecycleName:
-    21300000: walk forward main character 8x3_0
-    21300002: walk forward main character 8x3_1
-    21300004: walk forward main character 8x3_2
-    21300006: walk forward main character 8x3_3
-    21300008: walk forward main character 8x3_4
-    21300010: walk forward main character 8x3_5
-    21300012: walk forward main character 8x3_6
-    21300014: walk forward main character 8x3_7
-    21300016: walk forward main character 8x3_8
-    21300018: walk forward main character 8x3_9
-    21300020: walk forward main character 8x3_10
-    21300022: walk forward main character 8x3_11
-    21300024: walk forward main character 8x3_12
-    21300026: walk forward main character 8x3_13
-    21300028: walk forward main character 8x3_14
-    21300030: walk forward main character 8x3_15
-    21300032: walk forward main character 8x3_16
-    21300034: walk forward main character 8x3_17
-    21300036: walk forward main character 8x3_18
-    21300038: walk forward main character 8x3_19
-    21300040: walk forward main character 8x3_20
-    21300042: walk forward main character 8x3_21
-    21300044: walk forward main character 8x3_22
-    21300046: walk forward main character 8x3_23
+    21300000: motylek 8x3_0
+    21300002: motylek 8x3_1
+    21300004: motylek 8x3_2
+    21300006: motylek 8x3_3
+    21300008: motylek 8x3_4
+    21300010: motylek 8x3_5
+    21300012: motylek 8x3_6
+    21300014: motylek 8x3_7
+    21300016: motylek 8x3_8
+    21300018: motylek 8x3_9
+    21300020: motylek 8x3_10
+    21300022: motylek 8x3_11
+    21300024: motylek 8x3_12
+    21300026: motylek 8x3_13
+    21300028: motylek 8x3_14
+    21300030: motylek 8x3_15
+    21300032: motylek 8x3_16
+    21300034: motylek 8x3_17
+    21300036: motylek 8x3_18
+    21300038: motylek 8x3_19
+    21300040: motylek 8x3_20
+    21300042: motylek 8x3_21
+    21300044: motylek 8x3_22
+    21300046: motylek 8x3_23
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -108,13 +108,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walk forward main character 8x3_0
+      name: motylek 8x3_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 208
-        width: 86
-        height: 104
+        y: 198
+        width: 100
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,19 +122,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea340129eab1dad4898215747b6cdec7
+      spriteID: 9b01b395622967849a62be141b703255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk forward main character 8x3_1
+      name: motylek 8x3_1
       rect:
         serializedVersion: 2
-        x: 86
-        y: 208
-        width: 86
-        height: 104
+        x: 100
+        y: 198
+        width: 100
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,19 +142,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 226c7be4382ccae4789fd1d57ad8be8c
+      spriteID: 62d21c76214ce124589053d62504d796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk forward main character 8x3_2
+      name: motylek 8x3_2
       rect:
         serializedVersion: 2
-        x: 172
-        y: 208
-        width: 86
-        height: 104
+        x: 200
+        y: 198
+        width: 100
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,19 +162,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8d46b973842a5a4dbe9402d6a3c5b9b
+      spriteID: 45667ad5a9fa10c43934faf1ebbfdc62
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk forward main character 8x3_3
+      name: motylek 8x3_3
       rect:
         serializedVersion: 2
-        x: 258
-        y: 208
-        width: 86
-        height: 104
+        x: 300
+        y: 198
+        width: 100
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,19 +182,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95d839a19ceb17e45b0fe63ade4afd06
+      spriteID: 4a5968ac387240442afac36e4d5641c4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk forward main character 8x3_4
+      name: motylek 8x3_4
       rect:
         serializedVersion: 2
-        x: 344
-        y: 208
-        width: 86
-        height: 104
+        x: 400
+        y: 198
+        width: 100
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,19 +202,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09ee6edcaf429284a967cac4c7956ccf
+      spriteID: b32b29e640728b449a312e99ba6e8051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk forward main character 8x3_5
+      name: motylek 8x3_5
       rect:
         serializedVersion: 2
-        x: 430
-        y: 208
-        width: 86
-        height: 104
+        x: 500
+        y: 198
+        width: 100
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,19 +222,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa514449633629a49a45971402d5e6b9
+      spriteID: 27e13d57dd88fc54d86f7984d1bf071e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk forward main character 8x3_6
+      name: motylek 8x3_6
       rect:
         serializedVersion: 2
-        x: 516
-        y: 208
-        width: 86
-        height: 104
+        x: 600
+        y: 198
+        width: 100
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,19 +242,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84f9796c2b4bf2244b2b11511b6ef706
+      spriteID: c66bc6cf2317a7344874d92118ae2995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk forward main character 8x3_7
+      name: motylek 8x3_7
       rect:
         serializedVersion: 2
-        x: 602
-        y: 208
-        width: 86
-        height: 104
+        x: 700
+        y: 198
+        width: 100
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,179 +262,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 324e46b0cecb27c42a5298edd85cbb82
+      spriteID: 72aedf16d2410d94daa79a24778eb32b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk forward main character 8x3_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 104
-        width: 86
-        height: 104
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dce7cdc912b8ecc4a84bb959daa04bd0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk forward main character 8x3_9
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 104
-        width: 86
-        height: 104
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb32d1d3a46ee2347b94a4df93a97cad
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk forward main character 8x3_10
-      rect:
-        serializedVersion: 2
-        x: 172
-        y: 104
-        width: 86
-        height: 104
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9089aec02196e54a8ab2da11c0cb1a7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk forward main character 8x3_11
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 104
-        width: 86
-        height: 104
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2cc543fac251abb4ab49b0af4ebf2d38
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk forward main character 8x3_12
-      rect:
-        serializedVersion: 2
-        x: 344
-        y: 104
-        width: 86
-        height: 104
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 307a9c19e9a97dc4c8dc3f69351366ca
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk forward main character 8x3_13
-      rect:
-        serializedVersion: 2
-        x: 430
-        y: 104
-        width: 86
-        height: 104
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bdba5f3cbac72ef46b09dd5fc6f97d2d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk forward main character 8x3_14
-      rect:
-        serializedVersion: 2
-        x: 516
-        y: 104
-        width: 86
-        height: 104
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bfc3eb9c064648749a7861ea37b31010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk forward main character 8x3_15
-      rect:
-        serializedVersion: 2
-        x: 602
-        y: 104
-        width: 86
-        height: 104
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fcc20c9e6f4f2574d9ce558735e64154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk forward main character 8x3_16
+      name: motylek 8x3_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 86
-        height: 104
+        y: 99
+        width: 100
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -442,19 +282,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b6ef624c89220149a32732f25ce0451
+      spriteID: 5589fe039447ec140a55264ba0750d5b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk forward main character 8x3_17
+      name: motylek 8x3_9
       rect:
         serializedVersion: 2
-        x: 86
-        y: 0
-        width: 86
-        height: 104
+        x: 100
+        y: 99
+        width: 100
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,19 +302,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f981c7e3d61424409841c9db277c660
+      spriteID: 678b9ee40425c7f4fb943e845f9bd713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk forward main character 8x3_18
+      name: motylek 8x3_10
       rect:
         serializedVersion: 2
-        x: 172
-        y: 0
-        width: 86
-        height: 104
+        x: 200
+        y: 99
+        width: 100
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -482,19 +322,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c83afa1777a9554bae71b56deae2421
+      spriteID: 5c48322c8b07256428d90d61115fd969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk forward main character 8x3_19
+      name: motylek 8x3_11
       rect:
         serializedVersion: 2
-        x: 258
-        y: 0
-        width: 86
-        height: 104
+        x: 300
+        y: 99
+        width: 100
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -502,19 +342,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8003cce7a0298fd4aaf16bf9e8fdfe37
+      spriteID: 6ad7ea08a0ad2034db307a02729778be
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk forward main character 8x3_20
+      name: motylek 8x3_12
       rect:
         serializedVersion: 2
-        x: 344
-        y: 0
-        width: 86
-        height: 104
+        x: 400
+        y: 99
+        width: 100
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -522,19 +362,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14145b2624ca7634d8fd090fd277f2c7
+      spriteID: 4504e8352f0f32640ab6c54814f990ef
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk forward main character 8x3_21
+      name: motylek 8x3_13
       rect:
         serializedVersion: 2
-        x: 430
-        y: 0
-        width: 86
-        height: 104
+        x: 500
+        y: 99
+        width: 100
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -542,19 +382,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee0b687ac2df3e140b76246d71dd6d8a
+      spriteID: 9a982b30451d83444a80294c36e97bbc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk forward main character 8x3_22
+      name: motylek 8x3_14
       rect:
         serializedVersion: 2
-        x: 516
-        y: 0
-        width: 86
-        height: 104
+        x: 600
+        y: 99
+        width: 100
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,19 +402,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6ada638781504a43ae785cfad8ad247
+      spriteID: 55f045e08c9c8934ab54ed9307ae6cee
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk forward main character 8x3_23
+      name: motylek 8x3_15
       rect:
         serializedVersion: 2
-        x: 602
-        y: 0
-        width: 86
-        height: 104
+        x: 700
+        y: 99
+        width: 100
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -582,7 +422,167 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f57957df32e86b641a88f32f872315bd
+      spriteID: f11e6460b13a327468436dc68bdd1533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motylek 8x3_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4433f94bd1b80dd4ca8389ac3ccdde79
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motylek 8x3_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fff89ecf34e6a34e88ec0276549291c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motylek 8x3_18
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34829db8c2594f47829aee65500d4ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motylek 8x3_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc353e4d1e8733c4c8ec394a38c5a14d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motylek 8x3_20
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81cd111b0b6917244acc961d2883074c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motylek 8x3_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b35f9a1f246331468d7075c3abfb877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motylek 8x3_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 100
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3711dd6038c4674bb214ae302997e32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: motylek 8x3_23
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 100
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35a15c54a095b149adb4dda61aa03e4
       vertices: []
       indices: 
       edges: []
@@ -590,7 +590,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 06c2c5a9590ca6645838ab908a080f33
+    spriteID: a39300f43b1b6e0409552a654a714ebb
     vertices: []
     indices: 
     edges: []

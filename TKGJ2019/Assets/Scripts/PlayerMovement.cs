@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using TMPro;
 using FMODUnity;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SceneManager.LoadScene(1, LoadSceneMode.Additive);
         movee = this;
 		animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
@@ -61,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
           //  transform.localScale = new Vector3(2, 2, 2);
           //  Invoke("DecreaseSize", 1);
          
-            if(zone != null && transform.GetComponent<PlayerShop>().money >= 1 )
+            if(zone != null && transform.GetComponent<PlayerShop>().money >= 7 )
             {
                 if (zone.isMaxScale == true)
                 {
@@ -86,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
                     Camera.main.orthographicSize += 0.1f;
 
 
-                transform.GetComponent<PlayerShop>().money -= 1;
+                transform.GetComponent<PlayerShop>().money -= 6;
                 
                 moneyUI.text = transform.GetComponent<PlayerShop>().money.ToString();
 
@@ -102,9 +104,11 @@ public class PlayerMovement : MonoBehaviour
 		}
 		else
 			howMuchGreenProgress = Mathf.Clamp01(howMuchGreenProgress - (0.5f * Time.deltaTime));
-		emitter.SetParameter("zone", howMuchGreenProgress);
-        
 
+		emitter.SetParameter("zone", howMuchGreenProgress);
+
+        if (Input.GetKeyDown(KeyCode.R))
+            SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
