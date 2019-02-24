@@ -9,10 +9,10 @@ public class PlayerShop : MonoBehaviour
     {
        if( collision.gameObject.tag == "Money")
         {
-            money++;
+            money+=100;
             Destroy(collision.gameObject);
 
-            Debug.Log(money);
+           // Debug.Log(money);
         }
     }
 }

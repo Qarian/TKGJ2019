@@ -13,7 +13,7 @@ public class Zone : MonoBehaviour
     float targetScale;
 	float scale;
 
-	bool isMaxScale = false;
+	public bool isMaxScale = false;
 
 	Transform childTransform;
     Transform childTransform2;

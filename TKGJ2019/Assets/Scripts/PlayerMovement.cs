@@ -24,6 +24,9 @@ public class PlayerMovement : MonoBehaviour
     public int neededMoney = 10;
     public int resources = 0;
 
+    private int checkedZones = 0;
+    public GameObject endgame;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.Z)) CameraZoom();
+        if (Input.GetKey(KeyCode.X)) CameraOut();
 
         moneyUI.text = transform.GetComponent<PlayerShop>().money.ToString();
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
@@ -56,20 +61,39 @@ public class PlayerMovement : MonoBehaviour
           //  transform.localScale = new Vector3(2, 2, 2);
           //  Invoke("DecreaseSize", 1);
          
-            if(zone != null && transform.GetComponent<PlayerShop>().money <= neededMoney )
+            if(zone != null && transform.GetComponent<PlayerShop>().money >= 1 )
             {
+                if (zone.isMaxScale == true)
+                {
+                    Destroy(zone);
+
+                    CameraZoom();
+
+
+
+                        checkedZones++;
+                    if (checkedZones >= 4)
+                    {
+                        endgame.SetActive(true);
+                        CameraZoom();
+                    }
+
+                    Debug.Log(checkedZones);
+                    return;
+                }
+
                 if(Camera.main.orthographicSize <= 10.1f )
                     Camera.main.orthographicSize += 0.1f;
 
 
-                transform.GetComponent<PlayerShop>().money -= neededMoney;
+                transform.GetComponent<PlayerShop>().money -= 1;
                 
                 moneyUI.text = transform.GetComponent<PlayerShop>().money.ToString();
 
                 zone.IncreaseScale();
             }
         }
-		else if (Camera.main.orthographicSize >= 7.55f)
+		else if (Camera.main.orthographicSize >= 4.55f)
             Camera.main.orthographicSize -= 0.01f;
 		if (isInZone)
 		{
@@ -115,5 +139,15 @@ public class PlayerMovement : MonoBehaviour
     {
         playerLevel++;
         animator.SetInteger("level", playerLevel);
+    }
+
+    public void CameraZoom()
+    {
+        if (Camera.main.orthographicSize >= 1f) Camera.main.orthographicSize -= 0.5f;
+    }
+
+    public void CameraOut()
+    {
+        if (Camera.main.orthographicSize <= 25f) Camera.main.orthographicSize += 0.5f;
     }
 }
