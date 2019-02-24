@@ -2,6 +2,7 @@
 
 public class Zone : MonoBehaviour
 {
+   
 	public float maxScale;
 	public float lerpSpeed = 1f;
 
@@ -52,6 +53,8 @@ public class Zone : MonoBehaviour
 		{
 			targetScale = maxScale;
 			isMaxScale = true;
+            PlayerMovement.movee.LevelUp();
+
 		}
 	}
 

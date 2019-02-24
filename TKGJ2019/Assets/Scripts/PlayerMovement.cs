@@ -4,6 +4,8 @@ using FMODUnity;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public int playerLevel = 0;
+    public static PlayerMovement movee;
     public TextMeshProUGUI moneyUI;
     public static Transform playerPos;
     Zone zone;
@@ -25,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        movee = this;
 		animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         playerPos = transform;
@@ -36,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		Debug.Log(emitter.IsPlaying());
+
         moneyUI.text = transform.GetComponent<PlayerShop>().money.ToString();
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 		moveInput = moveInput.normalized;
@@ -60,8 +63,7 @@ public class PlayerMovement : MonoBehaviour
 
 
                 transform.GetComponent<PlayerShop>().money -= neededMoney;
-
-                Debug.Log(transform.GetComponent<PlayerShop>().money);
+                
                 moneyUI.text = transform.GetComponent<PlayerShop>().money.ToString();
 
                 zone.IncreaseScale();
@@ -109,5 +111,9 @@ public class PlayerMovement : MonoBehaviour
         transform.localScale = Vector3.one;
     }
 
-
+    public void LevelUp()
+    {
+        playerLevel++;
+        animator.SetInteger("level", playerLevel);
+    }
 }

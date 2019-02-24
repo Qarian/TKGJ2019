@@ -10,7 +10,7 @@ public class EnemyBullet : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<EnemyBehaviour>() != null) return;
 
-        Debug.Log(collision.gameObject.name);
+
         var col = collision.gameObject.GetComponent<PlayerHP>();
         Destroy(gameObject);
         if (col != null)

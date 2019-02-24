@@ -45,11 +45,11 @@ public class SpawnEnemy : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log(collision.name);
-        if (collision.GetComponent<Zone>() != null)
+        if (collision.tag == "Zone")
         {
-
-            // collision.GetComponent<SpawnEnemy>().enabled = false;
-            Destroy(transform);
+            
+            collision.GetComponent<SpawnEnemy>().enabled = false;
+            Destroy(transform.gameObject);
         }
     }
 

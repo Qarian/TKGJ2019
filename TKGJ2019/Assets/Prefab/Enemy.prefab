@@ -163,7 +163,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
 --- !u!95 &8694556694642742826
 Animator:
@@ -260,9 +260,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
-  horizontal: 0
-  vertical: 0
-  firing: 0
+  seeDistance: 10
+  shootingDistance: 10
+  distanceToNextpointInPath: 0.03
+  path: []
+  target: {fileID: 0}
 --- !u!114 &4990113412496152630
 MonoBehaviour:
   m_ObjectHideFlags: 0
