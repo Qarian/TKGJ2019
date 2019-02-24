@@ -148,7 +148,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -164,7 +164,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.55
+  orthographic size: 0.55
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5969,25 +5969,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5024037747501101933, guid: a0f3c6db06790c244a1d7d5036ec3c9b,
+    - target: {fileID: 7368677350824172541, guid: a0f3c6db06790c244a1d7d5036ec3c9b,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7864344
-      objectReference: {fileID: 0}
-    - target: {fileID: 5024037747501101933, guid: a0f3c6db06790c244a1d7d5036ec3c9b,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7864344
-      objectReference: {fileID: 0}
-    - target: {fileID: 5024037747501101933, guid: a0f3c6db06790c244a1d7d5036ec3c9b,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7864344
-      objectReference: {fileID: 0}
-    - target: {fileID: 5024037746728726538, guid: a0f3c6db06790c244a1d7d5036ec3c9b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.87
+      propertyPath: m_MaskInteraction
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0f3c6db06790c244a1d7d5036ec3c9b, type: 3}

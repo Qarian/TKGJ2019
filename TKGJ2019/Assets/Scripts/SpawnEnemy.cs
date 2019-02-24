@@ -41,4 +41,16 @@ public class SpawnEnemy : MonoBehaviour
         currentEnemiesSpawned--;
     }
 
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log(collision.name);
+        if (collision.GetComponent<Zone>() != null)
+        {
+
+            // collision.GetComponent<SpawnEnemy>().enabled = false;
+            Destroy(transform);
+        }
+    }
+
 }
