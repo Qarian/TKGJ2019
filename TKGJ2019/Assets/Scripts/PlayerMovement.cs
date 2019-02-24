@@ -48,13 +48,16 @@ public class PlayerMovement : MonoBehaviour
         
         moveVelocity = moveInput * Speed;
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
           //  transform.localScale = new Vector3(2, 2, 2);
           //  Invoke("DecreaseSize", 1);
          
             if(zone != null && transform.GetComponent<PlayerShop>().money <= neededMoney )
             {
+                if(Camera.main.orthographicSize <= 10.1f )
+                    Camera.main.orthographicSize += 0.1f;
+
 
                 transform.GetComponent<PlayerShop>().money -= neededMoney;
 
@@ -64,6 +67,8 @@ public class PlayerMovement : MonoBehaviour
                 zone.IncreaseScale();
             }
         }
+		else if (Camera.main.orthographicSize >= 7.55f)
+            Camera.main.orthographicSize -= 0.01f;
 		if (isInZone)
 		{
 			isInZone = false;
@@ -72,6 +77,8 @@ public class PlayerMovement : MonoBehaviour
 		else
 			howMuchGreenProgress = Mathf.Clamp01(howMuchGreenProgress - (0.5f * Time.deltaTime));
 		emitter.SetParameter("zone", howMuchGreenProgress);
+        
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
